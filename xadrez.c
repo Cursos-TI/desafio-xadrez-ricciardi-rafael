@@ -28,5 +28,50 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+
+    // ============================
+    // Movimentação da TORRE (for)
+    // ============================
+    int casasTorre = 5;
+    printf("Movimento da TORRE:\n");
+
+    // A Torre se move em linha reta — neste caso, 5 casas para a direita
+    for (int i = 1; i <= casasTorre; i++) {
+        printf("Casa %d: Direita\n", i);
+    }
+
+    printf("\n"); // Linha em branco para separar os blocos
+
+    // =============================
+    // Movimentação do BISPO (while)
+    // =============================
+    int casasBispo = 5;
+    int contadorBispo = 1;
+    printf("Movimento do BISPO:\n");
+
+    // O Bispo se move na diagonal — neste caso, 5 casas para cima e à direita
+    while (contadorBispo <= casasBispo) {
+        printf("Casa %d: Cima, Direita\n", contadorBispo);
+        contadorBispo++;
+    }
+
+    printf("\n");
+
+    // =====================================
+    // Movimentação da RAINHA (do-while)
+    // =====================================
+    int casasRainha = 8;
+    int contadorRainha = 1;
+    printf("Movimento da RAINHA:\n");
+
+    // A Rainha se move em todas as direções — aqui, 8 casas para a esquerda
+    do {
+        printf("Casa %d: Esquerda\n", contadorRainha);
+        contadorRainha++;
+    } while (contadorRainha <= casasRainha);
+
+    printf("\nSimulação finalizada.\n");
+
+
     return 0;
 }
