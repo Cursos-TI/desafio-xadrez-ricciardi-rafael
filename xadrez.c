@@ -70,6 +70,28 @@ int main() {
         contadorRainha++;
     } while (contadorRainha <= casasRainha);
 
+    printf("\n");
+
+    // =======================================
+    // Movimentação do CAVALO (loops aninhados)
+    // =======================================
+
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+
+    printf("Movimento do CAVALO:\n");
+
+    int contadorBaixo = 1;
+
+    for (int i = 0; i < casasEsquerda; i++) {
+        while (contadorBaixo <= casasBaixo) {
+            printf("Casa %d: Baixo\n", contadorBaixo);
+            contadorBaixo++;
+        }
+
+        printf("Casa %d: Esquerda\n", contadorBaixo);
+    }
+
     printf("\nSimulação finalizada.\n");
 
 
